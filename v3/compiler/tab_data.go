@@ -55,6 +55,11 @@ func LoadDataTable(filegetter helper.FileGetter, fileName, headerType, resolveHe
 			if sheet.IsRowEmpty(row, maxCol+1) {
 				break
 			}
+			if (resolveHeaderType != "IndexDefine") && (resolveHeaderType != "TypeDefine"){
+				if (row == 1 || row == 2){
+					continue
+				}
+			}
 
 			// 读取每一行
 			readOneRow(sheet, tab, row)
