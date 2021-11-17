@@ -40,7 +40,7 @@ var (
 	paramJsonTypeOut = flag.String("jsontype_out", "", "output json type (*.json)")
 	paramCSharpOut   = flag.String("csharp_out", "", "output c# class and deserialize code (*.cs)")
 	paramGoOut       = flag.String("go_out", "", "output golang code (*.go)")
-	paramBinaryOut   = flag.String("binary_out", "", "output binary format(*.bin)")
+	paramBinaryOut   = flag.String("binary_out", "", "output binary format(*.bytes)")
 	paramTypeOut     = flag.String("type_out", "", "output table types(*.json)")
 	paramCppOut      = flag.String("cpp_out", "", "output c++ format (*.cpp)")
 	paramJavaOut     = flag.String("java_out", "", "output java code (*.java)")
@@ -48,6 +48,6 @@ var (
 	// 按表多文件导出
 	paramJsonDir     = flag.String("json_dir", "", "output json format (*.json) to dir")
 	paramLuaDir      = flag.String("lua_dir", "", "output lua format (*.lua) to dir")
-	paramBinaryDir   = flag.String("binary_dir", "", "output binary format (*.bin) to dir")
+	paramBinaryDir   = flag.String("binary_dir", "", "output binary format (*.bytes) to dir")
 	paramPbBinaryDir = flag.String("pbbin_dir", "", "output binary format (*.pbb) to dir")
 )
